@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://balcony961.gr/sitemap.xml
