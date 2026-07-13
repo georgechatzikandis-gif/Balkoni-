@@ -23,3 +23,5 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 revealEls.forEach(el => observer.observe(el));
+
+document.getElementById('year').textContent = new Date().getFullYear();
