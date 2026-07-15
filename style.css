@@ -316,6 +316,21 @@ p { line-height: 1.7; color: #4a4038; }
   font-size: 1.7rem;
   margin: 10px 0 10px;
 }
+.menu-review {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.menu-review p {
+  color: rgba(246,239,227,0.75);
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  margin: 0;
+}
 .menu-item p { color: rgba(246,239,227,0.7); }
 
 /* ---------- Location ---------- */
@@ -340,8 +355,8 @@ p { line-height: 1.7; color: #4a4038; }
 }
 .footer-top {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr;
-  gap: 50px;
+  grid-template-columns: 1.3fr 0.8fr 0.9fr 0.9fr;
+  gap: 40px;
   padding-bottom: 50px;
 }
 .footer-brand .logo { display: inline-block; margin-bottom: 16px; }
@@ -374,6 +389,11 @@ p { line-height: 1.7; color: #4a4038; }
   line-height: 1.6;
 }
 .footer-cta { margin-top: 8px; }
+.footer-review-copy {
+  color: rgba(246,239,227,0.6);
+  font-size: 0.92rem;
+  margin-bottom: 16px;
+}
 .footer-bottom {
   border-top: 1px solid rgba(246,239,227,0.12);
   padding: 26px 0;
