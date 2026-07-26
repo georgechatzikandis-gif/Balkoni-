@@ -25,3 +25,16 @@ const observer = new IntersectionObserver((entries) => {
 revealEls.forEach(el => observer.observe(el));
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+const bgVideos = document.querySelectorAll('video[autoplay]');
+function tryPlayVideos() {
+  bgVideos.forEach(v => {
+    v.muted = true;
+    const p = v.play();
+    if (p && p.catch) p.catch(() => {});
+  });
+}
+tryPlayVideos();
+['touchstart', 'click', 'scroll'].forEach(evt => {
+  window.addEventListener(evt, tryPlayVideos, { once: true, passive: true });
+});
